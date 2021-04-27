@@ -25,10 +25,7 @@ public class Bag {
     }
 
     public double calculate() {
-        return      articles.stream().mapToDouble(article->article.getPrixTotalHT()+tva.getTva(article.getPrixTotalHT())).sum()
-                //+
-                 //   tva.getTva(articles)
-        ;
+        return articles.stream().mapToDouble(article->article.getPrixTotalHT()+tva.getTva(article.getPrixTotalHT())).sum();
     }
 
     public void add(String s) {

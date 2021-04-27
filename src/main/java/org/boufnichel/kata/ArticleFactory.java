@@ -3,12 +3,15 @@ package org.boufnichel.kata;
 public class ArticleFactory {
     public static Article createArticle(String allInfo){
         switch (getTypeArticle(allInfo)){
+            //TODO - use lombok builder
             case 1:return new ArticlePesable(getArticleName(allInfo),getArticlePrice(allInfo),getArticleQtte(allInfo));
             case 2:return new ArticleUnitaire(getArticleName(allInfo),getArticlePrice(allInfo),getArticleQtte(allInfo));
             default:return null;
         }
-
     }
+
+    //TODO - move to util class
+    //TODO - call split method once
     private static String getArticleName(String allInfo){
         String[] arr=allInfo.split(":");
         if (arr.length>0) return arr[0];
