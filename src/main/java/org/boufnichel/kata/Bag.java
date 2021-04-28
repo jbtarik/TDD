@@ -1,27 +1,19 @@
 package org.boufnichel.kata;
 
+import org.boufnichel.kata.creators.ArticleFactory;
+import org.boufnichel.kata.creators.BagBuilder;
 import org.boufnichel.kata.tva.Tva;
-import org.boufnichel.kata.tva.TvaFactory;
+import org.boufnichel.kata.creators.TvaFactory;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class Bag {
-    List<Article> articles=new ArrayList<>();
+    List<Article> articles;
     Tva tva;
     public Bag(String s) {
         tva=TvaFactory.createTva(s);
-        List<String> myList = new ArrayList<String>(Arrays.asList(s.split("#")));
-
-        for(String article:myList){
-            if(!article.contains("TVA:")){
-                Article art=ArticleFactory.createArticle(article);
-                articles.add(art);
-            }
-
-        }
-
+        articles= BagBuilder.getBag(s);
     }
 
     public double calculate() {

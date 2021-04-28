@@ -1,6 +1,6 @@
-package org.tarik.kata.factories;
+package org.boufnichel.kata.creators;
 
-import org.tarik.kata.Article;
+import org.boufnichel.kata.Article;
 
 import java.util.ArrayList;
 import java.util.Arrays;
