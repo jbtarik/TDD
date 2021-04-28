@@ -2,10 +2,9 @@ package org.boufnichel.kata;
 
 import org.boufnichel.kata.creators.ArticleFactory;
 import org.boufnichel.kata.creators.BagBuilder;
-import org.boufnichel.kata.tva.Tva;
 import org.boufnichel.kata.creators.TvaFactory;
+import org.boufnichel.kata.tva.Tva;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Bag {
