@@ -1,6 +1,6 @@
 package org.boufnichel.kata.creators;
 
-import org.boufnichel.kata.Article;
+import org.boufnichel.kata.bags.Article;
 
 import java.util.ArrayList;
 import java.util.Arrays;

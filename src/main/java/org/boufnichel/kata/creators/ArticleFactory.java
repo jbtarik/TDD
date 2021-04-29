@@ -1,8 +1,8 @@
 package org.boufnichel.kata.creators;
 
-import org.boufnichel.kata.Article;
-import org.boufnichel.kata.ArticlePesable;
-import org.boufnichel.kata.ArticleUnitaire;
+import org.boufnichel.kata.bags.Article;
+import org.boufnichel.kata.bags.ArticlePesable;
+import org.boufnichel.kata.bags.ArticleUnitaire;
 import org.boufnichel.kata.util.FactoryUtil;
 
 public class ArticleFactory {

@@ -1,7 +1,5 @@
-package org.boufnichel.kata;
+package org.boufnichel.kata.bags;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
 import lombok.experimental.SuperBuilder;
 
 @SuperBuilder

@@ -1,6 +1,7 @@
 
 package org.boufnichel.kata;
 
+import org.boufnichel.kata.bags.Bag;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

@@ -1,4 +1,4 @@
-package org.boufnichel.kata;
+package org.boufnichel.kata.bags;
 
 import lombok.experimental.SuperBuilder;
 
